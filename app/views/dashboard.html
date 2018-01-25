@@ -1,0 +1,324 @@
+<div class="container-fluid ng-scope" ng-controller="dashboardCtrl as db" style="margin-top: 20px">
+    <div class="row">
+        <div class="col-sm-1 header-padding">
+            &nbsp;
+        </div>
+        <div class="col-sm-10 p-0" style="width: 94.33%;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="container-fluid" style="width: 100%;">
+                        <div class="row Rectangle-mandates-collection">
+                            <div class="col-sm-3 m-t-b-5">
+                                <span class="mandate-collection-font">Mandates</span>
+                            </div>
+                            <div class="col-sm-9 m-t-b-5">
+                                <div class="row">
+                                    <div class="col-sm-6" style="display: flex;margin-top: -6px;">&nbsp; <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker></div>
+                                    <div class="col-sm-2">
+                                        <span class="mandate-collection-font week-font" ng-click="" ng-class="{'dash-cursor':hovering}"
+                                              ng-mouseenter="hovering=true"
+                                              ng-mouseleave="hovering=false">Week</span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <span class="mandate-collection-font" ng-click="" ng-class="{'dash-cursor':hovering}"
+                                              ng-mouseenter="hovering=true"
+                                              ng-mouseleave="hovering=false">Month
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <span class="mandate-collection-font" ng-click="" ng-class="{'dash-cursor':hovering}"
+                                              ng-mouseenter="hovering=true"
+                                              ng-mouseleave="hovering=false">Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-10">
+                            <div class="col-sm-6">
+                                <div class="container-fluid"
+                                     style="width: 241px;height: 241px">
+                                    <div class="row">
+                                        <div class="col-sm-12  m-t-b-15">
+                                            <canvas width="100" height="100" id="doughnut1" class="chart chart-doughnut"
+                                                    chart-data="db.manDateval" chart-labels="db.mandtlabels"
+                                                    chart-options=" db.options" chart-colours="db.colours" chart-legend="true">
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                   <!-- <div class="row">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p class="Response-Received-label">Response Received</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p class="Response-Received-label">Response Pending</p>
+
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="total-response-num">{{db.totalResponseReceived}}</p>
+                                        <div class="total-response-text">
+                                            <p>
+                                                Toal Response Received</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="response-receivednocolr"> Response Received Status</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div id="test5" style="background-color: #60ba0f;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">{{db.responseReceivedSuccess}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="success-label">Success</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div id="test4" style="background-color: #ff0000;;border: 1px solid #dddddd;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">{{db.responseReceivedFailure}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="filure-label">Failure</p>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 30px;">
+                                    <div class="col-sm-12">
+                                        <p class="total-pending-num"> {{db.totalResponsePending}}</p>
+                                        <div class="total-pending-text">
+                                            <p> Toal Response Pending</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="response-receivednocolr">
+                                            Response Pending Status</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div id="test2" style="background-color: #838383;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">{{db.responsePendingLessthan10days}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="lessthan-10">Less than 10 days</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div id="test3" style="background-color: #838383;border: 1px solid #dddddd;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">{{db.responsePendingmorethan10days}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="morethan-10">More than 10 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="container-fluid" style="width: 100%;">
+                        <div class="row Rectangle-mandates-collection">
+                            <div class="col-sm-3 m-t-b-5">
+                                <span class="mandate-collection-font">Collection</span>
+                            </div>
+                            <div class="col-sm-9 m-t-b-5">
+                                <div class="row">
+                                    <div class="col-sm-6" style="display: flex;margin-top: -6px;">&nbsp; <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker></div>
+                                    <div class="col-sm-2">
+                                        <span class="mandate-collection-font week-font" ng-click="" ng-class="{'dash-cursor':hovering}"
+                                              ng-mouseenter="hovering=true"
+                                              ng-mouseleave="hovering=false">Week</span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <span class="mandate-collection-font" ng-click="" ng-class="{'dash-cursor':hovering}"
+                                              ng-mouseenter="hovering=true"
+                                              ng-mouseleave="hovering=false">Month
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <span class="mandate-collection-font" ng-click="" ng-class="{'dash-cursor':hovering}"
+                                              ng-mouseenter="hovering=true"
+                                              ng-mouseleave="hovering=false">Year</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-10">
+                            <div class="col-sm-6">
+                                <div class="container-fluid"
+                                     style="width: 241px;height: 241px;">
+                                    <div class="row">
+                                        <div class="col-sm-12  m-t-b-15">
+                                            <canvas width="100" height="100" id="doughnut2" class="chart chart-doughnut"
+                                                    chart-data=" db.collection" chart-labels=" db.collectionlab"
+                                                    chart-options=" db.options" chart-legend="true">
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                  <!--  <div class="row">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p class="Response-Received-label">Response Collection Received</p>
+
+                                        </div>
+                                    </div>-->
+                                 <!--   <div class="row">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p class="Response-Received-label">Response Collection Pending</p>
+
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="total-response-num">{{db.totalCollectionResponseReceived}}</p>
+                                        <div class="total-response-text">
+                                            <p>
+                                                Toal Collection Response Received</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="response-receivednocolr"> Response Received Status</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div id="test6" style="background-color: #60ba0f;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">{{db.collectionResponseReceivedSuccess}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="success-label">Success</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div id="test7" style="background-color: #ff0000;;border: 1px solid #dddddd;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">{{db.collectionResponseReceivedFailure}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="filure-label">Failure</p>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 30px;">
+                                    <div class="col-sm-12">
+                                        <p class="total-pending-num">{{db.failedCollectionsAmount}}</p>
+                                        <div class="total-pending-text">
+                                            <p> Toal Failed Collection </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 30px;">
+                                    <div class="col-sm-12">
+                                        <p class="total-pending-num">{{db.successCollectionsAmount}}</p>
+                                        <div class="total-pending-text">
+                                            <p> Toal Successful Collection</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="response-receivednocolr">
+                                            Response Pending Status</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div id="test8" style="background-color: #838383;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">77</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="lessthan-10">Less than 10 days</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div id="test9" style="background-color: #838383;border: 1px solid #dddddd;
+                                            height: 41px;
+                                            border-radius: 50%;
+                                            -moz-border-radius: 50%;
+                                            -webkit-border-radius: 50%;
+                                            width: 41px;">
+                                            <p class="small-circle">77</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="morethan-10">More than 10 days</p>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1 header-padding">
+            &nbsp;
+        </div>
+    </div>
+</div>
+
+    

@@ -1,0 +1,487 @@
+/* app css stylesheet */
+.ui-grid-column-menu-button .ui-grid-icon-angle-down{
+  display: none;
+}
+.secoundry-button{
+  width: 129px;
+  height: 37px;
+  border-radius: 18.5px;
+  background-color: #535353;
+  /* height: 13px; */
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.primary-button{
+  width: 99px;
+  height: 37px;
+  border-radius: 18.5px;
+  background-color: #af1917;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.ui-grid-viewport{
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.ui-grid-header-viewport{
+  height: 46px;
+  background-color: #ffed00;
+}
+.ui-grid-header-cell{
+  border:0px;
+}
+.m-t-b-5{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.header-top-style{
+  border-top: 4px #ffed00 solid;
+  box-shadow: 0 0 5.4px 0.6px rgba(0, 0, 0, 0.22);
+  height: 55px;
+}
+
+.header-container >.welcome-font{
+  font-size: 12px;
+  font-family: 'Fira Sans', sans-serif;
+  position: relative;
+  top: 2px;
+  left: 10px;
+  font-weight: 600;
+}
+.week-font{
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1px;
+}
+.dash-cursor {
+ cursor: pointer;
+}
+.small-circle{
+  text-align: center;margin-top: 12px;font-size: 12px;margin-left: 13px;position: absolute; color: white;"
+}
+.Response-Received-label {
+    height: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #787878;
+}
+.morethan-10{
+  /* height: 10px; */
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight:normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #101010;
+}
+
+.lessthan-10{
+  /* height: 10px; */
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #101010;
+}
+.filure-label{
+  height: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #101010;
+}
+.success-label{
+  height: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #101010;
+}
+.response-receivednocolr{
+  height: 17px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  padding: 5px;
+  color: #787878;
+}
+.total-response-num {
+  width: 75px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  margin: 0;
+  line-height: 40px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d40f14;
+}
+
+
+.total-response-text {
+  width: 100%; height: 30px; background-color: #d40f14; padding-left: 5px;
+}
+
+.total-response-text {
+  width: 100%; height: 30px; background-color: #d40f14; padding-left: 5px;
+}
+
+.total-response-text > p {
+  font-size: 10px;
+  color: #FFFFFF; line-height: 30px;font-family: 'Fira Sans', sans-serif;
+}
+
+.total-pending-num {
+  width: 60px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  margin: 0;
+  line-height: 40px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ed6826;
+}
+
+.total-pending-text {
+  width: 100%; height: 30px; background-color: #ed6826; padding-left: 5px;
+}
+
+.total-pending-text {
+  width: 100%; height: 30px; background-color: #ed6826; padding-left: 5px;
+}
+
+
+.total-pending-text > p {
+  font-size: 10px;
+  color: #FFFFFF; line-height: 30px;font-family: 'Fira Sans', sans-serif;
+}
+.header-container>.lastLogin{
+  height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;"
+}
+.header-container >.date-header-font{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 37px;
+  height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.date-login-font{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 50px;
+  height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;"
+}
+.lastlogin-font{
+
+  height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+html {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.header-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.header-container >.calendar-icon{
+  float: left;
+  width: 23px;
+}
+.header-container >.notefication-icon{
+  float: left;
+  width: 23px;
+}
+.header-container img{
+  float: left;
+  width: 40px;
+}
+.notification
+{
+  top:5px;
+  float: right;
+  width: 40px;
+}
+.header-container p {
+  font-size: 24px;
+  font-family: 'Fira Sans', sans-serif;
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+
+.header-container-user{
+  height: 28px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+}
+.p-10{
+  padding: 10px;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+/*header styles --------------------------*/
+.header-padding{
+  max-width: 31px;
+}
+.header-size {
+  height: 79px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5.4px 0.6px rgba(0, 0, 0, 0.22);
+}
+.head-image{
+  width: 57px;
+  height: 57px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+/*end of the header --styles----------------*/
+
+.nach-footer-font{
+  height: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #040404;
+}
+.nach-footer {
+  bottom: 0;
+}
+
+.response-recived-statusfont{
+  height: 17px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #787878;
+}
+.total-response-received{
+  background-color: #d40f14;
+  padding: 5px;
+  /* height: 15px; */
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.response-received-tab{
+  height: 34px;
+  background-color: #d40f14;
+}
+.p-t-10{
+  padding-top: 12px
+}
+.response-received-font{
+  width: 75px;
+  height: 34px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.32;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d40f14;
+}
+
+.m-t-10{
+  margin-top: 10px;
+}
+.p-0{
+  padding:0px
+}
+.main-block-width{
+  width: 94.33%;
+  padding: 0px;
+}
+.m-t-b-15{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.m-t-b-10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mandate-collection-font{
+  width: 61px;
+  height: 11px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #040404;
+}
+.Rectangle-mandates-collection {
+  height: 40px;
+  background-color: #ffed00;
+}
+
+
+.login-container {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.make-center {
+  text-align: center;
+
+}
+.claedd {
+  font-family: Fira Sans;
+  font-size: 14px;
+  padding: 5px;
+}
+.even{
+  background-color: lightgrey;
+
+}
+.odd{
+  background-color:white;
+}

@@ -1,0 +1,1673 @@
+<body>
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="row" style="
+    border-top: 4px #ffed00 solid;
+    box-shadow: 0 0 5.4px 0.6px rgba(0, 0, 0, 0.22);
+">
+    <div class="container">
+        <div class="col-sm-6">
+            <div class="header-container">
+                <img src="../images/gateway_icon.png">
+                <p class="header-text">NACH Mandates Operation</p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="header-container">
+                        <img src="../images/calendar.png" width="20px">
+                        <p style="  height: 29px; font-family: 'Fira Sans', sans-serif;font-size: 12px; font-weight: normal; font-style: normal;  font-stretch: normal;  line-height: 1.33;  letter-spacing: normal; text-align: left;
+  color: #000000;">Last Login</p>
+                        <p style="position: absolute;
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 29px;
+     font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;">05 Dec,2017 16:59PM</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="header-container">
+                        <img src="../images/notification.png" width="20px">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="header-container">
+                        <img src="../images/circle.png" width="20px">
+                        <p class="welcome-font">Welcome <br>
+                            Johne Doe</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- uiView: header -->
+            <div ui-view="header" class="ng-scope" style="">
+                <div class="container-fluid ng-scope" ng-controller="headerCtrl">
+
+
+                    <div class="row">
+                        <md-content class="md-padding _md" style="padding: 0px;margin-top: 22px;">
+                            <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links"
+                                        class="ng-isolate-scope">
+                                <div class="md-nav-bar">
+                                    <nav role="navigation" style="
+    margin-top: 17px;
+">
+                                        <ul class="_md-nav-bar-list" ng-transclude="" role="listbox" tabindex="0"
+                                            ng-focus="ctrl.onFocus()" ng-blur="ctrl.onBlur()"
+                                            ng-keydown="ctrl.onKeydown($event)" aria-label="navigation links">
+                                            <li class="md-nav-item ng-scope ng-isolate-scope" role="option"
+                                                aria-selected="false" md-nav-sref="dashboard" name="dashboard"
+                                                value="dashboard"><!-- ngIf: ctrl.mdNavSref --><a
+                                                    class="_md-nav-button md-accent md-button ng-scope md-ink-ripple md-unselected"
+                                                    ng-transclude="" ng-if="ctrl.mdNavSref"
+                                                    ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="dashboard"
+                                                    href="#/dashboard"><span ng-transclude=""
+                                                                             class="_md-nav-button-text ng-scope"><span
+                                                    class="ng-scope">Dash Board</span></span>
+                                                <div class="md-ripple-container" style=""></div>
+                                            </a><!-- end ngIf: ctrl.mdNavSref --><!-- ngIf: ctrl.mdNavHref -->
+                                                <!-- ngIf: ctrl.mdNavClick --></li>
+                                            <!-- <md-nav-item md-nav-sref="operations"  name="operations" value="operations">
+                                                Operations
+                                            </md-nav-item>
+                                            <md-nav-item md-nav-sref="createmandate"  name="createmandate" value="createmandate">
+                                                Create Mandate
+                                            </md-nav-item>
+                                            <md-nav-item md-nav-sref="verifymandate" name="verifymandate" value="verifymandate">
+                                                Verify Mandate
+                                            </md-nav-item> -->
+                                            <li class="md-nav-item ng-scope ng-isolate-scope" role="option"
+                                                aria-selected="true" md-nav-sref="paymentchecker" name="paymentchecker"
+                                                value="paymentchecker"><!-- ngIf: ctrl.mdNavSref --><a
+                                                    class="_md-nav-button md-accent md-button ng-scope md-ink-ripple md-active md-primary"
+                                                    ng-transclude="" ng-if="ctrl.mdNavSref"
+                                                    ng-class="ctrl.getNgClassMap()" tabindex="-1"
+                                                    ui-sref="paymentchecker" href="#/paymentchecker" style=""><span
+                                                    ng-transclude="" class="_md-nav-button-text ng-scope"><span
+                                                    class="ng-scope">
+                    Payment Checker
+                </span></span></a><!-- end ngIf: ctrl.mdNavSref --><!-- ngIf: ctrl.mdNavHref -->
+                                                <!-- ngIf: ctrl.mdNavClick --></li>
+                                            <li class="md-nav-item ng-scope ng-isolate-scope" role="option"
+                                                aria-selected="false" md-nav-sref="paymentmaker" name="paymentmaker"
+                                                value="paymentmaker"><!-- ngIf: ctrl.mdNavSref --><a
+                                                    class="_md-nav-button md-accent md-button ng-scope md-ink-ripple md-unselected"
+                                                    ng-transclude="" ng-if="ctrl.mdNavSref"
+                                                    ng-class="ctrl.getNgClassMap()" tabindex="-1" ui-sref="paymentmaker"
+                                                    href="#/paymentmaker"><span ng-transclude=""
+                                                                                class="_md-nav-button-text ng-scope"><span
+                                                    class="ng-scope">
+                    Payment Maker
+                </span></span></a><!-- end ngIf: ctrl.mdNavSref --><!-- ngIf: ctrl.mdNavHref -->
+                                                <!-- ngIf: ctrl.mdNavClick --></li>
+                                            <!-- <md-nav-item md-nav-sref="updatemandate"  name="updatemandate" value="updatemandate">
+                                                 Update Mandate
+                                             </md-nav-item>
+                                             <md-nav-item md-nav-sref="cancelmandate"  name="cancelmandate" value="cancelmandate">
+                                                 Cancel Mandate
+                                             </md-nav-item>-->
+
+
+                                            <!-- these require actual routing with ui-router or ng-route, so they
+                                            won't work in the demo
+                                            <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
+                                            <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
+                                            You can also add options for the <code>ui-sref-opts</code> attribute.
+                                            <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
+                                              Page Six
+                                            </md-nav-item>
+                                            -->
+                                        </ul>
+                                    </nav>
+                                    <md-nav-ink-bar class="" style="left: 146px; width: 172px;"></md-nav-ink-bar>
+                                </div>
+                            </md-nav-bar>
+                        </md-content>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- uiView: template -->
+            <div ui-view="template" class="ng-scope" style="">
+                <div class="container-fluid ng-scope" ng-controller="paymentcheckerCtrl as pm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div ui-i18n="en" class="grid ui-grid ng-isolate-scope grid1516859250544" id="grid1"
+                                 ui-grid="{ data:  pm.myData.mandateTransactions }" style="height: 344px;">
+                                <!-- TODO (c0bra): add "scoped" attr here, eventually? -->
+                                <style ui-grid-style="" class="ng-binding">.grid1516859250544 {
+                                    /* Styles for the grid */
+                                }
+
+                                .grid1516859250544 .ui-grid-row, .grid1516859250544 .ui-grid-cell, .grid1516859250544 .ui-grid-cell .ui-grid-vertical-bar {
+                                    height: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-row:last-child .ui-grid-cell {
+                                    border-bottom-width: 0px;
+                                }
+
+                                /*
+                                .ui-grid[dir=rtl] .ui-grid-viewport {
+                                  padding-left: px;
+                                }
+                                */
+
+                                .grid1516859250544 .ui-grid-coluiGrid-0048 {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-0049 {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004A {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004B {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004C {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004D {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004E {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004F {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004G {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004H {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004I {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004J {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004K {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-canvas {
+                                    width: 390px;
+                                    height: 90px;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-header-canvas {
+                                    width: 404px;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-header-canvas {
+                                    height: inherit;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-viewport {
+                                    width: 0px;
+                                    height: -35.4px;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-header-viewport {
+                                    width: 0px;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-footer-canvas {
+                                    width: 404px;
+                                }
+
+                                .grid1516859250544 .ui-grid-render-container-body .ui-grid-footer-viewport {
+                                    width: 0px;
+                                }
+
+                                .grid1516859250544 .ui-grid-footer-aggregates-row {
+                                    height: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-footer-info {
+                                    height: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-0048 {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-0049 {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004A {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004B {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004C {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004D {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004E {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004F {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004G {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004H {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004I {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004J {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }
+
+                                .grid1516859250544 .ui-grid-coluiGrid-004K {
+                                    min-width: 30px;
+                                    max-width: 30px;
+                                }</style>
+                                <div class="ui-grid-contents-wrapper" role="grid">
+                                    <!-- ngIf: grid.options.enableGridMenu --><!-- ngIf: grid.hasLeftContainer() -->
+                                    <div role="presentation" ui-grid-one-bind-id-grid="'grid-container'"
+                                         class="ui-grid-render-container ng-isolate-scope ui-grid-render-container-body"
+                                         ng-style="{ 'margin-left': colContainer.getMargin('left') + 'px', 'margin-right': colContainer.getMargin('right') + 'px' }"
+                                         ui-grid-render-container="" container-id="'body'" col-container-name="'body'"
+                                         row-container-name="'body'" bind-scroll-horizontal="true"
+                                         bind-scroll-vertical="true"
+                                         enable-horizontal-scrollbar="grid.options.enableHorizontalScrollbar"
+                                         enable-vertical-scrollbar="grid.options.enableVerticalScrollbar"
+                                         id="1516859250544-grid-container" style="margin-left: 0px; margin-right: 0px;">
+                                        <!-- All of these dom elements are replaced in place -->
+                                        <div role="rowgroup" class="ui-grid-header ng-scope"><!-- theader -->
+                                            <div class="ui-grid-top-panel">
+                                                <div class="ui-grid-header-viewport">
+                                                    <div class="ui-grid-header-canvas">
+                                                        <div class="ui-grid-header-cell-wrapper"
+                                                             ng-style="colContainer.headerCellWrapperStyle()">
+                                                            <div role="row" class="ui-grid-header-cell-row">
+                                                                <!-- ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-0048"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="descending"
+                                                                         class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-0048-header-text 1516859250544-uiGrid-0048-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-0048-header-text">Customer Name</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort Descending" class=""
+                                                                                  id="1516859250544-uiGrid-0048-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-down-dir"
+                                                                                    style=""></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-0048-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-0049"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-0049-header-text 1516859250544-uiGrid-0049-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-0049-header-text">Cust Id</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-0049-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-0049-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004A"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004A-header-text 1516859250544-uiGrid-004A-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004A-header-text">Installment</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004A-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004A-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004B"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004B-header-text 1516859250544-uiGrid-004B-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004B-header-text">Loan Amount</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004B-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004B-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004C"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004C-header-text 1516859250544-uiGrid-004C-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004C-header-text">Loan Type</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004C-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004C-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004D"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004D-header-text 1516859250544-uiGrid-004D-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004D-header-text">Outstanding</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004D-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004D-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004E"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004E-header-text 1516859250544-uiGrid-004E-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004E-header-text">Due Amount</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004E-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004E-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004F"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004F-header-text 1516859250544-uiGrid-004F-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004F-header-text">Due Date</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004F-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004F-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004G"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004G-header-text 1516859250544-uiGrid-004G-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004G-header-text">Collection Date</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004G-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004G-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004H"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004H-header-text 1516859250544-uiGrid-004H-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004H-header-text">Collection Amount</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004H-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004H-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004I"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004I-header-text 1516859250544-uiGrid-004I-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004I-header-text">Umrn</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004I-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004I-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004J"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004J-header-text 1516859250544-uiGrid-004J-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004J-header-text">Remarks</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004J-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004J-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                                <div class="ui-grid-header-cell ui-grid-clearfix ng-scope ng-isolate-scope ui-grid-coluiGrid-004K"
+                                                                     ng-repeat="col in colContainer.renderedColumns track by col.uid"
+                                                                     ui-grid-header-cell="" col="col"
+                                                                     render-index="$index">
+                                                                    <div role="columnheader"
+                                                                         ng-class="{ 'sortable': sortable }"
+                                                                         ui-grid-one-bind-aria-labelledby-grid="col.uid + '-header-text ' + col.uid + '-sortdir-text'"
+                                                                         aria-sort="none" class="ng-scope sortable"
+                                                                         aria-labelledby="1516859250544-uiGrid-004K-header-text 1516859250544-uiGrid-004K-sortdir-text">
+                                                                        <div role="button" tabindex="0"
+                                                                             ng-keydown="handleKeyDown($event)"
+                                                                             class="ui-grid-cell-contents ui-grid-header-cell-primary-focus"
+                                                                             col-index="renderIndex"><span
+                                                                                class="ui-grid-header-cell-label ng-binding"
+                                                                                ui-grid-one-bind-id-grid="col.uid + '-header-text'"
+                                                                                id="1516859250544-uiGrid-004K-header-text">Select Flag</span>
+                                                                            <span ui-grid-one-bind-id-grid="col.uid + '-sortdir-text'"
+                                                                                  ui-grid-visible="col.sort.direction"
+                                                                                  aria-label="Sort None"
+                                                                                  class="ui-grid-invisible"
+                                                                                  id="1516859250544-uiGrid-004K-sortdir-text"><i
+                                                                                    ng-class="{ 'ui-grid-icon-up-dir': col.sort.direction == asc, 'ui-grid-icon-down-dir': col.sort.direction == desc, 'ui-grid-icon-blank': !col.sort.direction }"
+                                                                                    title="" aria-hidden="true"
+                                                                                    class="ui-grid-icon-blank"></i> <sub
+                                                                                    ui-grid-visible="isSortPriorityVisible()"
+                                                                                    class="ui-grid-sort-priority-number ng-binding ui-grid-invisible">1</sub></span>
+                                                                        </div>
+                                                                        <!-- ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div role="button" tabindex="0"
+                                                                             ui-grid-one-bind-id-grid="col.uid + '-menu-button'"
+                                                                             class="ui-grid-column-menu-button ng-scope ui-grid-column-menu-button-last-col"
+                                                                             ng-if="grid.options.enableColumnMenus &amp;&amp; !col.isRowHeader  &amp;&amp; col.colDef.enableColumnMenu !== false"
+                                                                             ng-click="toggleMenu($event)"
+                                                                             ng-keydown="headerCellArrowKeyDown($event)"
+                                                                             ng-class="{'ui-grid-column-menu-button-last-col': isLastCol}"
+                                                                             ui-grid-one-bind-aria-label="i18n.headerCell.aria.columnMenuButtonLabel"
+                                                                             aria-haspopup="true"
+                                                                             id="1516859250544-uiGrid-004K-menu-button"
+                                                                             aria-label="Column Menu"><i
+                                                                                class="ui-grid-icon-angle-down"
+                                                                                aria-hidden="true">&nbsp;</i></div>
+                                                                        <!-- end ngIf: grid.options.enableColumnMenus && !col.isRowHeader  && col.colDef.enableColumnMenu !== false -->
+                                                                        <div ui-grid-filter=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end ngRepeat: col in colContainer.renderedColumns track by col.uid -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="rowgroup" class="ui-grid-viewport ng-isolate-scope"
+                                             ng-style="colContainer.getViewportStyle()" ui-grid-viewport=""
+                                             style="overflow: scroll;"><!-- tbody -->
+                                            <div class="ui-grid-canvas">
+                                                <!-- ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index -->
+                                                <div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index"
+                                                     class="ui-grid-row ng-scope"
+                                                     ng-style="Viewport.rowStyle(rowRenderIndex)">
+                                                    <div role="row" ui-grid-row="row" row-render-index="rowRenderIndex"
+                                                         class="ng-isolate-scope">
+                                                        <!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-0048"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-0048-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                syed
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-0049"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-0049-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                456123
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004A"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004A-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                4/36
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004B"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004B-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">500
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004C"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004C-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Personal
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004D"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004D-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                1,00,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004E"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004E-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                11,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004F"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004F-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                11/05/2017
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004G"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004G-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                05/11/2017
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004H"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004H-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                7,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004I"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004I-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope"></div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004J"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004J-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Icon
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004K"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-0-uiGrid-004K-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                false
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                    </div>
+                                                </div>
+                                                <!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index -->
+                                                <div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index"
+                                                     class="ui-grid-row ng-scope"
+                                                     ng-style="Viewport.rowStyle(rowRenderIndex)">
+                                                    <div role="row" ui-grid-row="row" row-render-index="rowRenderIndex"
+                                                         class="ng-isolate-scope">
+                                                        <!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-0048"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-0048-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">john
+                                                                done dfdfdf
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-0049"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-0049-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                1234544
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004A"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004A-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                4/36
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004B"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004B-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                5,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004C"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004C-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Personal
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004D"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004D-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                1,00,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004E"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004E-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                11,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004F"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004F-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                11/05/2017
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004G"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004G-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                05/11/2017
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004H"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004H-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                7,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004I"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004I-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope"></div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004J"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004J-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Icon
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004K"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-1-uiGrid-004K-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                false
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                    </div>
+                                                </div>
+                                                <!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index -->
+                                                <div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index"
+                                                     class="ui-grid-row ng-scope"
+                                                     ng-style="Viewport.rowStyle(rowRenderIndex)">
+                                                    <div role="row" ui-grid-row="row" row-render-index="rowRenderIndex"
+                                                         class="ng-isolate-scope">
+                                                        <!-- ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-0048"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-0048-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Abhay
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-0049"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-0049-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                VENK00003
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004A"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004A-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                3/36
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004B"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004B-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">199
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004C"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004C-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Personal
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004D"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004D-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                1,00,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004E"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004E-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                11,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004F"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004F-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                11/05/2017
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004G"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004G-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                05/11/2017
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004H"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004H-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                10,000
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004I"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004I-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope"></div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004J"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004J-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                Icon
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                        <div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.uid"
+                                                             ui-grid-one-bind-id-grid="rowRenderIndex + '-' + col.uid + '-cell'"
+                                                             class="ui-grid-cell ng-scope ui-grid-coluiGrid-004K"
+                                                             ng-class="{ 'ui-grid-row-header-cell': col.isRowHeader }"
+                                                             role="gridcell" ui-grid-cell=""
+                                                             id="1516859250544-2-uiGrid-004K-cell">
+                                                            <div class="ui-grid-cell-contents ng-binding ng-scope">
+                                                                false
+                                                            </div>
+                                                        </div>
+                                                        <!-- end ngRepeat: (colRenderIndex, col) in colContainer.renderedColumns track by col.uid -->
+                                                    </div>
+                                                </div>
+                                                <!-- end ngRepeat: (rowRenderIndex, row) in rowContainer.renderedRows track by $index -->
+                                            </div>
+                                        </div><!-- ngIf: colContainer.needsHScrollbarPlaceholder() -->
+                                        <!-- ngIf: grid.options.showColumnFooter --></div>
+                                    <!-- ngIf: grid.hasRightContainer() --><!-- ngIf: grid.options.showGridFooter -->
+                                    <!-- ngIf: grid.options.enableColumnMenus -->
+                                    <div class="ui-grid-column-menu ng-scope" ui-grid-column-menu=""
+                                         ng-if="grid.options.enableColumnMenus" style="left: 0px; top: 34px;">
+                                        <!-- ngIf: shown --></div><!-- end ngIf: grid.options.enableColumnMenus -->
+                                    <div ng-transclude=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--   <div class="row" style="border-color: black;border-width: 1px;border-style: solid;margin-bottom: 10px;background-color: #fffD00;">
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <p class="claedd">Sno</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Customer Name</p>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Cus ID</p>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd">Installment</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p class="claedd"> Loan Amount </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Loan Type </p>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Outstanding</p>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Due Amount </p>
+
+                                    </div>
+                                    <div class="col-sm-3" style="padding-left: 5px;">
+                                        <p class="claedd"> Due Date </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-sm-3" style="padding-left:5px;">
+                                        <p class="claedd"> Collection Date</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Collection Amount</p>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Remarks</p>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="claedd"> Select</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row" ng-repeat="o in pm.myData.mandateTransactions" ng-class="$index % 2 == 0 && 'even' || 'odd'">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <p class="claedd"> {{$index}}</p>
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="claedd"> {{o.customerName.length > 0 ? o.customerName: "N/A"}}</p>
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="claedd"> {{o.custId.length > 0 ? o.custId: "N/A"}}</p>
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="claedd"> 4/36</p>
+                                            &lt;!&ndash;{{o.installment}}&ndash;&gt;
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <p class="claedd"> {{o.loanAmount.length > 0 ? o.loanAmount: "N/A"}}</p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="claedd">{{o.loanType.length > 0 ? o.loanType: "N/A"}}</p>
+
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="claedd">{{o.outstanding.length > 0 ? o.outstanding: "N/A"}}</p>
+
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="claedd">{{o.dueAmount.length > 0 ? o.dueAmount: "N/A"}}</p>
+
+
+                                        </div>
+                                        <div class="col-sm-3" style="padding: 0px;">
+                                            <p class="claedd"> 11/05/2018</p>
+                                           &lt;!&ndash; <md-icon style="padding: 3px;" class="md-datepicker-calendar-icon ng-scope" aria-label="md-calendar" md-svg-src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgM2gtMVYxaC0ydjJIOFYxSDZ2Mkg1Yy0xLjExIDAtMS45OS45LTEuOTkgMkwzIDE5YzAgMS4xLjg5IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMTZINVY4aDE0djExek03IDEwaDV2NUg3eiIvPjwvc3ZnPg==" role="img"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" focusable="false"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path></svg></md-icon>&ndash;&gt;
+                                            &lt;!&ndash;{{o.dueDate}}&ndash;&gt;
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-3" style="padding-left: 5px;">
+                                            <p class="claedd"> 02/01/2018</p>
+                                            &lt;!&ndash;{{o.collectionDate}}&ndash;&gt;
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="claedd">{{o.collectionAmount.length > 0 ? o.collectionAmount: "N/A"}}</p>
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            Icon
+                                            &lt;!&ndash;{{o.remarks}}&ndash;&gt;
+                                        </div>
+                                        <div class="col-sm-3" style="padding-top:1px">
+                                            <md-checkbox aria-label="Follow" class="md-secondary" ng-init="o.selectFlag =='Y'"
+                                                         ng-model="o.selectFlag" ng-true-value="'Y'"
+                                                         ng-false-value="'N'"></md-checkbox>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">&nbsp;</div>
+                            <div class="col-sm-2">
+                                <div class="row">
+                                    <div class="col-sm-3" style="padding: 0px">
+                                        <md-button class="md-primary md-hue-1">Pending</md-button>
+                                    </div>
+                                    <div class="col-sm-2">&nbsp;</div>
+                                    <div class="col-sm-3">
+                                        <md-button class="md-primary md-hue-1"  ng-click="pm.updateChecker(pm.mandateTransactions)">Send</md-button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                &nbsp;
+                            </div>
+                        </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- uiView: footer -->
+            <div ui-view="footer" class="ng-scope" style="">
+                <div class="container-fluid ng-scope" ng-controller="footerCtrl">
+                    <div class="row" style="background-color: lightgray">
+                        <div class="col-sm-12" style="text-align: center">
+                            <p class="nach-footer-font">Copyrights@ABPB 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/chart.js/dist/Chart.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-chart.js/angular-chart.js"></script>
+<script src="bower_components/ui-grid/ui-grid.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<!-- Angular Material Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+
+<!-- <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-material/angular-material.js" type="text/javascript"></script>
+<script src="bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
+<script src="bower_components/angular-aria/angular-aria.js" type="text/javascript"></script>
+<script src="bower_components/angular-messages/angular-messages.js" type="text/javascript"></script> -->
+
+<script src="app.js"></script>
+<!--serivces -->
+<script src="services/adithyaServices.js" type="text/javascript"></script>
+<script src="services/userStroage.js" type="text/javascript"></script>
+
+
+<!--Controller Defined -->
+<script src="controller/loginCtrl.js" type="text/javascript"></script>
+<script src="controller/dashboardCtrl.js" type="text/javascript"></script>
+<script src="controller/footerCtrl.js" type="text/javascript"></script>
+<script src="controller/headerCtrl.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="controller/checker/paymentcheckerCtrl.js"></script>
+<script type="text/javascript" src="controller/checker/paymentmakerCtrl.js"></script>
+
+
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+
+</body>
