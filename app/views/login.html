@@ -1,0 +1,81 @@
+<div class="container-fluid" ng-controller="loginCtrl as vm">
+    <div class="row" style="height: 10vh;">
+        <div class="col-sm-12 col-xs-12">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="make-center">
+        <div class="card login-container">
+        <div class="card-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2 col-xs-2">&nbsp;</div>
+                    <div class="col-sm-8 col-xs-8" style="object-fit: cover">
+                        <img src="../images/abbp-logo.png">
+                    </div>
+                    <div class="col-sm-2 col-xs-2">&nbsp;</div>
+                </div>
+                <div class="row" style="background-color: rgba(140, 158, 255, 0.13);padding: 10px;margin-bottom: 10px;">
+                    <div class="col-sm-12 col-xs-12" style="text-align: center">
+                        NACH Mandates Opertaion
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-2 col-xs-2">&nbsp;</div>
+                    <div class="col-sm-8 col-xs-8" style="text-align: center">
+                        Login
+                    </div>
+                    <div class="col-sm-2 col-xs-2">&nbsp;</div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-12 col-xs-12">
+                        <input type="text" class="form-control" id="name" placeholder="User name"
+                               ng-model="vm.user.userName" required  style="font-size: 12px;
+    font-family:  Fira sans-serif;">
+                        <span class="glyphicon glyphicon-user form-control-feedback"
+                              style="padding-right: 2em;font-size: 10px;color: #808282;"></span>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-12 col-xs-12">
+                        <input type="password" class="form-control" id="password" ng-model="vm.user.passWord"
+                               placeholder="Password" required style="font-size: 12px;
+    font-family: Fira sans-serif;">
+                        <span class="glyphicon glyphicon-lock form-control-feedback"
+                              style="padding-right: 2em;font-size: 10px;color: #808282;"></span>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-12 col-xs-12">
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" ng-click="vm.submit()">
+                            Login
+                        </button>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12" style="text-align: center">
+                        <a>Forgot Password?</a>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12" style="text-align: center">
+                        Copyrights@ABPB 2017
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+
